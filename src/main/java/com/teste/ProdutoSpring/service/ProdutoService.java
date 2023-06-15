@@ -1,5 +1,6 @@
 package com.teste.ProdutoSpring.service;
 
+import com.teste.ProdutoSpring.ProdutoInterface;
 import com.teste.ProdutoSpring.model.Produto;
 import com.teste.ProdutoSpring.utils.Generate;
 import org.springframework.stereotype.Service;
@@ -12,7 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @Service
-public class ProdutoService {
+public class ProdutoService implements ProdutoInterface {
 
     private static final Logger logger = LoggerFactory.getLogger(ProdutoService.class);
 
